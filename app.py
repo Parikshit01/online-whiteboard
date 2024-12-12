@@ -13,4 +13,4 @@ def handle_draw_event(data):
     emit('draw_event', data, broadcast=True)
 
 if __name__ == '__main__':
-    socketio.run(app, debug=True)
+    socketio.run(app, host='0.0.0.0', debug=True)
